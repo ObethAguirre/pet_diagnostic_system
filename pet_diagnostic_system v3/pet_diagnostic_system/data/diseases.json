@@ -1,0 +1,130 @@
+{
+  "diseases": {
+    "parvovirus_canino": {
+      "symptoms": ["vomito", "diarrea", "fiebre", "letargo", "perdida_apetito", "deshidratacion"],
+      "description": "Virus altamente contagioso que afecta el tracto gastrointestinal de los perros.",
+      "severity": "alta",
+      "contagioso": true,
+      "tratamiento": "Hospitalización, fluidoterapia, antibióticos",
+      "especie": "perro"
+    },
+    "moquillo_canino": {
+      "symptoms": ["secrecion_nasal", "tos", "fiebre", "ojos_rojos", "estornudos", "letargo", "convulsiones"],
+      "description": "Virus que afecta varios sistemas del cuerpo, incluidos respiratorio y nervioso.",
+      "severity": "alta",
+      "contagioso": true,
+      "tratamiento": "Terapia de soporte, anticonvulsivantes, fluidos",
+      "especie": "perro"
+    },
+    "cistitis": {
+      "symptoms": ["dificultad_orinar", "orina_frecuente", "orina_sangre", "lamido_genital", "dolor_abdominal"],
+      "description": "Inflamación de la vejiga urinaria común en hembras.",
+      "severity": "media",
+      "contagioso": false,
+      "tratamiento": "Antibióticos, analgésicos, dieta especial",
+      "especie": "perro"
+    },
+    "leptospirosis": {
+      "symptoms": ["vomito", "fiebre", "letargo", "ictericia", "dolor_abdominal"],
+      "description": "Enfermedad bacteriana que afecta hígado y riñones.",
+      "severity": "alta",
+      "contagioso": true,
+      "tratamiento": "Antibióticos, soporte renal",
+      "especie": "perro"
+    },
+    "ehrlichiosis": {
+      "symptoms": ["fiebre", "letargo", "sangrado_nasal", "perdida_apetito", "cojera"],
+      "description": "Transmitida por garrapatas, afecta plaquetas y sistema inmunológico.",
+      "severity": "media",
+      "contagioso": false,
+      "tratamiento": "Doxiciclina por varias semanas",
+      "especie": "perro"
+    },
+    "sarna": {
+      "symptoms": ["picazon", "caida_pelo", "costras", "lesiones_piel"],
+      "description": "Infestación por ácaros que causa prurito severo.",
+      "severity": "media",
+      "contagioso": true,
+      "tratamiento": "Amitraz, ivermectina, baños medicados",
+      "especie": "perro"
+    },
+    "rinotraqueitis_felina": {
+      "symptoms": ["secrecion_nasal", "estornudos", "fiebre", "letargo", "ojos_rojos"],
+      "description": "Infección viral respiratoria muy contagiosa en gatos.",
+      "severity": "media",
+      "contagioso": true,
+      "tratamiento": "Antibióticos, antivirales, fluidoterapia",
+      "especie": "gato"
+    },
+    "panleucopenia_felina": {
+      "symptoms": ["vomito", "diarrea", "fiebre", "letargo", "deshidratacion"],
+      "description": "Virus similar al parvovirus canino, altamente letal en gatos jóvenes.",
+      "severity": "alta",
+      "contagioso": true,
+      "tratamiento": "Terapia intensiva, antibióticos, soporte nutricional",
+      "especie": "gato"
+    },
+    "leucemia_felina": {
+      "symptoms": ["fiebre", "letargo", "anemia", "infecciones_recurrentes"],
+      "description": "Virus que afecta el sistema inmunológico y puede provocar cáncer.",
+      "severity": "alta",
+      "contagioso": true,
+      "tratamiento": "No tiene cura, solo manejo paliativo",
+      "especie": "gato"
+    },
+    "calicivirus": {
+      "symptoms": ["estornudos", "ulceras_boca", "fiebre", "salivacion"],
+      "description": "Virus que causa problemas respiratorios y orales.",
+      "severity": "media",
+      "contagioso": true,
+      "tratamiento": "Antibióticos, antivirales, fluidos",
+      "especie": "gato"
+    },
+    "peritonitis_infecciosa_felina": {
+      "symptoms": ["distension_abdominal", "letargo", "fiebre", "perdida_apetito"],
+      "description": "Mutación del coronavirus felino, enfermedad mortal.",
+      "severity": "alta",
+      "contagioso": false,
+      "tratamiento": "Paliativo en la mayoría de los casos",
+      "especie": "gato"
+    },
+    "toxoplasmosis": {
+      "symptoms": ["letargo", "fiebre", "vomito", "convulsiones"],
+      "description": "Infección parasitaria que puede ser transmitida a humanos.",
+      "severity": "media",
+      "contagioso": true,
+      "tratamiento": "Antibióticos (clindamicina), soporte general",
+      "especie": "gato"
+    }
+  },
+  "symptoms": {
+    "vomito": { "type": "digestivo", "severity": 3 },
+    "diarrea": { "type": "digestivo", "severity": 3 },
+    "fiebre": { "type": "general", "severity": 2 },
+    "letargo": { "type": "general", "severity": 2 },
+    "perdida_apetito": { "type": "general", "severity": 1 },
+    "deshidratacion": { "type": "general", "severity": 3 },
+    "secrecion_nasal": { "type": "respiratorio", "severity": 2 },
+    "tos": { "type": "respiratorio", "severity": 2 },
+    "ojos_rojos": { "type": "respiratorio", "severity": 1 },
+    "estornudos": { "type": "respiratorio", "severity": 1 },
+    "convulsiones": { "type": "neurologico", "severity": 3 },
+    "dificultad_orinar": { "type": "urinario", "severity": 3 },
+    "orina_frecuente": { "type": "urinario", "severity": 2 },
+    "orina_sangre": { "type": "urinario", "severity": 3 },
+    "lamido_genital": { "type": "urinario", "severity": 1 },
+    "dolor_abdominal": { "type": "digestivo", "severity": 2 },
+    "ictericia": { "type": "hepatico", "severity": 2 },
+    "sangrado_nasal": { "type": "hematologico", "severity": 3 },
+    "cojera": { "type": "musculo_esqueletico", "severity": 1 },
+    "picazon": { "type": "dermatologico", "severity": 2 },
+    "caida_pelo": { "type": "dermatologico", "severity": 2 },
+    "costras": { "type": "dermatologico", "severity": 2 },
+    "lesiones_piel": { "type": "dermatologico", "severity": 2 },
+    "anemia": { "type": "hematologico", "severity": 2 },
+    "infecciones_recurrentes": { "type": "inmunologico", "severity": 3 },
+    "ulceras_boca": { "type": "oral", "severity": 2 },
+    "salivacion": { "type": "oral", "severity": 1 },
+    "distension_abdominal": { "type": "digestivo", "severity": 2 }
+  }
+}

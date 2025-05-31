@@ -1,0 +1,73 @@
+[
+    {
+        "date": "2025-05-30 21:26:21",
+        "pet_name": "Sin mascota",
+        "symptoms": [
+            "tos",
+            "fiebre"
+        ],
+        "diagnosis": {
+            "input": [
+                "tos",
+                "fiebre"
+            ],
+            "diagnoses": [
+                {
+                    "name": "moquillo_canino",
+                    "score": 57.14,
+                    "matches": [
+                        "tos",
+                        "fiebre"
+                    ],
+                    "missing": [
+                        "convulsiones",
+                        "estornudos",
+                        "letargo",
+                        "secrecion_nasal",
+                        "ojos_rojos"
+                    ],
+                    "severity": "alta",
+                    "contagious": true,
+                    "treatment": "Terapia de soporte, anticonvulsivantes, fluidos",
+                    "description": "Virus que afecta varios sistemas del cuerpo, incluidos respiratorio y nervioso."
+                },
+                {
+                    "name": "ehrlichiosis",
+                    "score": 40.0,
+                    "matches": [
+                        "fiebre"
+                    ],
+                    "missing": [
+                        "perdida_apetito",
+                        "letargo",
+                        "sangrado_nasal",
+                        "cojera"
+                    ],
+                    "severity": "media",
+                    "contagious": false,
+                    "treatment": "Doxiciclina por varias semanas",
+                    "description": "Transmitida por garrapatas, afecta plaquetas y sistema inmunol\u00f3gico."
+                },
+                {
+                    "name": "leptospirosis",
+                    "score": 40.0,
+                    "matches": [
+                        "fiebre"
+                    ],
+                    "missing": [
+                        "letargo",
+                        "vomito",
+                        "ictericia",
+                        "dolor_abdominal"
+                    ],
+                    "severity": "alta",
+                    "contagious": true,
+                    "treatment": "Antibi\u00f3ticos, soporte renal",
+                    "description": "Enfermedad bacteriana que afecta h\u00edgado y ri\u00f1ones."
+                }
+            ],
+            "is_complex": false,
+            "date": "2025-05-30 21:26:21"
+        }
+    }
+]

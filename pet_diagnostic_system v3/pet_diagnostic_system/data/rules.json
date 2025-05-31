@@ -1,0 +1,55 @@
+{
+  "validation_rules": {
+    "symptom_patterns": {
+      "digestivo": {
+        "required": ["vomito", "diarrea"],
+        "optional": ["fiebre", "letargo", "dolor_abdominal"],
+        "exclusions": ["secrecion_nasal", "tos"]
+      },
+      "respiratorio": {
+        "required": ["secrecion_nasal", "tos"],
+        "optional": ["fiebre", "ojos_rojos", "estornudos"],
+        "exclusions": ["vomito", "dificultad_orinar"]
+      },
+      "urinario": {
+        "required": ["dificultad_orinar"],
+        "optional": ["orina_frecuente", "orina_sangre", "lamido_genital"],
+        "exclusions": ["secrecion_nasal", "estornudos"]
+      }
+    },
+    "grammar_productions": {
+      "S": [["DIGESTIVO", "GENERAL"], ["RESPIRATORIO", "GENERAL"], ["URINARIO"]],
+      "DIGESTIVO": [["vomito", "diarrea"], ["vomito"], ["diarrea"]],
+      "RESPIRATORIO": [["secrecion_nasal", "tos"], ["estornudos", "ojos_rojos"]],
+      "URINARIO": [["dificultad_orinar", "orina_frecuente"], ["orina_sangre"]],
+      "GENERAL": [["fiebre", "letargo"], ["fiebre"], ["letargo"]]
+    },
+    "turing_machine_config": {
+      "symptom_encoding": {
+        "vomito": "V",
+        "diarrea": "D",
+        "fiebre": "F",
+        "secrecion_nasal": "S",
+        "tos": "T",
+        "ojos_rojos": "O",
+        "dificultad_orinar": "U",
+        "orina_sangre": "B"
+      },
+      "complex_patterns": {
+        "viral_digestive": ["V", "D", "F"],
+        "viral_respiratory": ["S", "T", "F"],
+        "urinary_emergency": ["U", "B", "F"]
+      }
+    }
+  },
+  "diagnostic_parameters": {
+    "score_threshold": 40,
+    "complex_case_boost": 1.3,
+    "symptom_severity_weights": {
+      "high": 1.5,
+      "medium": 1.2,
+      "low": 1.0
+    },
+    "max_symptoms": 5
+  }
+}

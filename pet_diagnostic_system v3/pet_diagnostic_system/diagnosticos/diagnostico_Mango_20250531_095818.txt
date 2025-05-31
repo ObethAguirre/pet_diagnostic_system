@@ -1,0 +1,14 @@
+===== REPORTE DE DIAGNÓSTICO VETERINARIO =====
+
+Fecha: 2025-05-31 09:58:18
+Nombre: Mango
+Síntomas: anemia, caida_pelo
+
+🦠 SARNA (25%)
+Gravedad: media | Contagioso: No
+Tratamiento: N/A
+
+🦠 LEUCEMIA_FELINA (25%)
+Gravedad: alta | Contagioso: No
+Tratamiento: N/A
+
