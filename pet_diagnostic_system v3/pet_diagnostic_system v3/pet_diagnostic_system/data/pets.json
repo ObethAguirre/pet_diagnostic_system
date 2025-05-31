@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Lola",
+        "species": "Perro",
+        "breed": "Cocker",
+        "age": "17",
+        "owner": "Obeth"
+    },
+    {
+        "name": "Lola",
+        "species": "Pero",
+        "breed": "Cocker",
+        "age": "12"
+    },
+    {
+        "name": "Lola",
+        "species": "Perro",
+        "breed": "Cocker",
+        "age": "12"
+    }
+]
